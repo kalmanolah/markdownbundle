@@ -1,0 +1,8 @@
+services:
+    markdown:
+        class: KalmanOlah\MarkdownBundle\Service\MarkdownService
+    kalmanolah_markdown.twig.extension.markdown:
+        class: KalmanOlah\MarkdownBundle\Twig\Extension\MarkdownExtension
+        arguments: [@markdown]
+        tags:
+         - { name: twig.extension }

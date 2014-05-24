@@ -1,0 +1,41 @@
+{
+    "name" : "kalmanolah/markdownbundle",
+    "description" : "Markdown/Parsedown bundle for Symfony2 providing a service and a twig filter",
+    "type" : "symfony-bundle",
+    "authors" : [{
+        "name" : "Kalman Olah",
+        "email" : "hello@kalmanolah.net"
+    }],
+    "homepage": "https://github.com/kalmanolah/markdownbundle",
+    "keywords" : [
+        "parsedown",
+        "markdown",
+        "symfony",
+        "symfony2",
+        "bundle",
+        "twig",
+        "service"
+    ],
+    "license" : [
+        "MIT"
+    ],
+    "require" : {
+        "php": ">=5.3.*",
+        "symfony/framework-bundle": ">=2.1.*",
+        "erusev/parsedown": "*"
+    },
+    "autoload" : {
+        "psr-0" : {
+            "KalmanOlah\\MarkdownBundle" : ""
+        }
+    },
+    "suggest": {
+        "symfony/twig-bundle": "For the Twig filter"
+    },
+    "target-dir" : "KalmanOlah/MarkdownBundle",
+    "extra" : {
+        "branch-alias" : {
+            "dev-master" : "2.4-dev"
+        }
+    }
+}
